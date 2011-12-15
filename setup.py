@@ -18,6 +18,7 @@ tests_require = [
     'django-registration',
     'django-haystack',
     'Whoosh',
+    'gunicorn',
 ]
 
 setup(
@@ -37,6 +38,7 @@ setup(
         'django-registration',
         'django-haystack>=1.1.0',
         'Whoosh',
+	'gunicorn',
     ],
     dependency_links=[
         'https://bitbucket.org/ubernostrum/django-registration/downloads/django-registration-0.8-alpha-1.tar.gz#egg=django-registration',

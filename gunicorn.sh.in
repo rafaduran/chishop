@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+LOGFILE=/${buildout:directory}/log/gunicorn.log
+LOGDIR=$(dirname $LOGFILE)
+NUM_WORKERS=${django-gunicorn:workers}
+BIND_ADDRESS=${django-gunicorn:address}
+BIND_PORT=${django-gunicorn:port}
+# user/group to run as
+USER=${django-gunicorn:user}
+GROUP=${django-gunicorn:group}
+test -d $LOGDIR || mkdir -p $LOGDIR
+exec ./bin/django run_gunicorn $BIND_ADDRESS:$BIND_PORT -w $NUM_WORKERS --user=$USER \
+    --group=$GROUP --log-level=debug --log-file=$LOGFILE 2>>$LOGFILE

@@ -114,6 +114,7 @@ INSTALLED_APPS = (
     'djangopypi',
     'haystack',
     'south',
+    'gunicorn',
 )
 
 HAYSTACK_SITECONF = 'chishop.search_sites'
