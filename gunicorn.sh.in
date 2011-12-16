@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
-LOGFILE=${buildout:directory}/log/gunicorn.log
-LOGDIR=$(dirname $LOGFILE)
+LOGFILE=${django-gunicorn:log_dir}/gunicorn.log
+LOGDIR=${django-gunicorn:log_dir}
 NUM_WORKERS=${django-gunicorn:workers}
 BIND_ADDRESS=${django-gunicorn:address}
 BIND_PORT=${django-gunicorn:port}
