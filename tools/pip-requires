@@ -1,0 +1,9 @@
+-e git+https://github.com/rafaduran/djangopypi#egg=djangopypi
+-e bzr+https://code.launchpad.net/~rafadurancastaneda/pkginfo/trunk
+-e hg+https://bitbucket.org/ubernostrum/django-registration#egg=django-registration
+South
+django-haystack
+Whoosh
+gunicorn
+django
+ipython

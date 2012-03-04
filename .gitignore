@@ -25,3 +25,4 @@ chishop/media/dists/*
 chishop/haystack/*
 chishop/settings.py
 log
+.venv/
