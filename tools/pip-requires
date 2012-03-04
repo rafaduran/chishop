@@ -7,3 +7,4 @@ Whoosh
 gunicorn
 django
 ipython
+django-debug-toolbar
